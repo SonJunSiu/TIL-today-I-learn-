@@ -3,4 +3,9 @@ git switch (branch1,2,3,4,.....)  해당 브랜치로 이동 처음은 무조건
 git branch (이름) 이름에 해당되는 브랜치 생성 
 
 git merge (만든브랜치)  다하면 메인 브렌치로 이동해서 병합해야함
-git branch -d (이름)
+git branch -d (이름) branch 지우는것
+
+reset : 과거로 시계돌리기(특정 시점으로 이동/특정 커밋 이후 내역 삭제)
+ex) c1 - c2 - c3 - c4 reset c2 입력시 c3,c4 삭제
+옵션 : 변경사항 남기기, 삭제하기
+revert : 특정 사건 삭제(특정 커밋 삭제라는 커밋 생성)
