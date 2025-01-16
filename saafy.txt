@@ -1,1 +1,6 @@
-이건강으지ㅏㅇ에서 만든 파일입니다.!
+git branch 브랜치가 몇개인지 확인
+git switch (branch1,2,3,4,.....)  해당 브랜치로 이동 처음은 무조건 메인브랜치master branch
+git branch (이름) 이름에 해당되는 브랜치 생성 
+
+git merge (만든브랜치)  다하면 메인 브렌치로 이동해서 병합해야함
+git branch -d (이름)
