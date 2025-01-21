@@ -6,4 +6,5 @@ e = ('동쪽')
 f = ('하늘에서도')
 g = ('서쪽')
 
-print(a, a, b, c, d, e, f, g, f, a, a, b, c, d)
+twinke = f'{a} {a} {b} {c} {d}\n{e} {f} {g} {f}\n{a} {a} {b} {c} {d}'
+print = twinke
