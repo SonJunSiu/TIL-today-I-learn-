@@ -28,4 +28,14 @@ authors = [
     '이항복',
     '임제',
     '임제',
+<<<<<<< HEAD
 ] # 
+=======
+]
+
+unique_authors = set(authors)      
+authors_without_duplicates = list(unique_authors)  
+
+
+print(authors_without_duplicates)
+>>>>>>> b03e3e895f01cccba4f51234cb77a85e950f254f
