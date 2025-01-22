@@ -37,11 +37,11 @@ def power(base, exponent):
             2 * (2 * (2 * 1))  
             결과 : 8
     '''
-    if :
-        return 
+    if  exponent == 0 :
+        return 1
     else:
-        
-        return
+        return base * power(base, exponent -1)
+    
 result_2 = power(2, 3)
 print(result_2) # 2 * 2 * 2 * 1 = 8
 
@@ -59,13 +59,15 @@ def sum_of_digits(number):
         1 + 2 + 3
         결과 : 6
     '''
-    if :
-        return 
+    if number < 10 :
+        return number
     else:
-        return 
+        return (number % 10) + sum_of_digits(number // 10)
+    
 result_3 = sum_of_digits(321)
 print(result_3) # 1 + 2 + 3 = 6
 
+'''
 학습 목표
 재귀 함수의 기본적인 개념과 작동 방식을 이해한다.
 재귀 함수를 사용하여 기본적인 수학 문제(거듭 제곱, 자릿수 합 등)를 해결할 수 있다.
@@ -94,3 +96,4 @@ def function_name(parameters):
 요구사항
 base(밑)와 exponent(지수)를 인자로 받아 제곱 값을 반환하는 함수 power를 작성하시오. 
 자연수를 입력받아, 각 자릿수의 합을 반환하는 함수 sum_of_digits를 작성하시오.
+'''

@@ -17,6 +17,6 @@ result_1 = create_data('python', 3)
 result_2 = create_data(subject='web', day=1, title= 'web 연습하기')
 result_3 = create_data(**global_data)
 
-print( result_1)
+print(result_1)
 print(result_2)
 print(result_3)

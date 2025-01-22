@@ -10,6 +10,7 @@ catalog = [
 backup_catalog = copy.deepcopy(catalog)
 
 
+
 catalog[3] = ['성공을 향한 한 걸음', '내 삶의 변화', '목표 달성의 비밀']
 ''' 
 도서 제목 '성공의 열쇠', '내면의 변화', '목표의 달성' 을 각각
@@ -23,3 +24,6 @@ print('backup_catalog : ')
 print(backup_catalog)
 print('catalog : ')
 print(catalog)
+
+#lst = [[0] * 5] % 5                 # 얕은복사로 같은 배열 5번 참조 이래 만들면 안되고
+#lst = [[0] * 5 for _ in range(5)]   #똑같이 생긴 배열  5개 생성 이래 만들어야 합니다.

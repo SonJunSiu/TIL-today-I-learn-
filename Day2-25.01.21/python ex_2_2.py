@@ -9,7 +9,7 @@ data = {
 
 print(data)
 
-data['단계'] = str(data['단계']) + '단계'
+data['단계'] = data['단계'] + '단계' # 그냥 '2단계' 도 가능
 
 
 name = '딕셔너리 활용하기'

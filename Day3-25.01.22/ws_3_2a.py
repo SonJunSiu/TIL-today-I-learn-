@@ -1,4 +1,6 @@
+# 실습 1
 number_of_people = 0
+
 
 def increase_user():
     global number_of_people
@@ -6,15 +8,20 @@ def increase_user():
 
 
 def create_user(name, age, address):
-    increase_user()
-
+    global number_of_people
     info = {
-        '이름' : name,
-        '나이' : age,
-        '주소' : address,
-        '유저 번호' : number_of_people
+        'name' : name,
+        'age' : age,
+        'address' : address,
+        
     }
-    print(f'{__name__}님 환영합니다')
+    print(f'현재 가입 된 유저 수 : {number_of_people}')
+    print(f'{name}님 환영합니다!')
+    increase_user()
     return info
-user = create_user('홍길동', 25, '서울시 강남구')
+
+user = create_user('홍길동', 30, '서울')
 print(user)
+print(f'현재 가입 된 유저 수 : {number_of_people}')
+
+#'유저 번호' : number_of_people  
