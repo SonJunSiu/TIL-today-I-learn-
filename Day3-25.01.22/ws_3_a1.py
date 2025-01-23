@@ -5,7 +5,7 @@ result_1 = my_multi(2, 3)
 print(result_1)
 # my_multi(2, 3) 결과 : 6
 # 함수를 수정하고 호출 결과를 result_1 변수에 할당하여 출력하시오.
-
+#이름() << 이형태 어지간하면 다 함수
 
 def is_negative(number):
     return number <= 0

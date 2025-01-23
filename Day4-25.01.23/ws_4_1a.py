@@ -18,3 +18,5 @@ print(type(parsed_data))
 
 # 특정 데이터 출력
 print(parsed_data['name'])
+print(parsed_data['username'])  
+print(parsed_data['company']['name'])  

@@ -1,3 +1,13 @@
+# 재귀함수 : 반복문이랑 비슷하기도 하구
+#           큰 문제를 해결할 때 작은 문제의 결과가 필요한 경우 사용
+# 제곱수 구해보기 ex) 3**8
+def my_expo(base, n) : 
+    if n == 0 :
+        return 1
+    #my_expo의 결과는 my_expo(base, n-1) * base
+    return  my_expo(base, n-1) * base
+print(my_expo(3, 789))
+
 def recur_example(number):
     '''
         함수(2) 실행
@@ -46,6 +56,10 @@ result_2 = power(2, 3)
 print(result_2) # 2 * 2 * 2 * 1 = 8
 
 # 모든 자릿수 더하기 함수
+# 함수가 한번 수행할때 명확하게 정으
+# 맨 끝자리 떼어내서 나머지 결과에 더하기 
+# 42133 % 10 하면 3 나옴 
+
 def sum_of_digits(number):
     '''
         함수(321) 실행
@@ -64,7 +78,7 @@ def sum_of_digits(number):
     else:
         return (number % 10) + sum_of_digits(number // 10)
     
-result_3 = sum_of_digits(321)
+result_3 = sum_of_digits(456456456456456456456456456456456456)
 print(result_3) # 1 + 2 + 3 = 6
 
 '''

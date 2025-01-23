@@ -19,7 +19,7 @@ print(type(food_list))
 for food in food_list :
     if food['이름'] == '토마토':
         food['종류'] = '과일'
-    print(f'{food['이름']} 은/는 {food['종류']} (이)다.')
+    print(f"{food['이름']} 은/는 {food['종류']} (이)다.")
 
     if food['이름'] == '자장면' :
         print('자장면엔 고춧가루지')
@@ -41,17 +41,15 @@ food_list = [
         '이름': '자장면'
     },
 ]
-'''
 index = (0)
 while index < len(food_list) : 
     food = food_list[index]
 
     if food['이름'] == '토마토':
         food['종류'] = '과일'
-    print(f'{food['이름']} 은/는 {food['종류']} (이)다.')
+    print(f"{food['이름']} 은/는 {food['종류']} (이)다.")
 
     if food['이름'] == '자장면' :
         print('자장면엔 고춧가루지')
-'''
-
+    index += 1
 print(food_list)

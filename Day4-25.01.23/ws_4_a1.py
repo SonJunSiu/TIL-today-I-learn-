@@ -1,12 +1,10 @@
-NAME = 'develper' #settings.py
-MAIN_URL = 'http://127.0.0.1:8000'
+from conf import settings
+from utils import create_url
 
-def create_url(name, main_url, page_num=1):
-    new_url = f'{main_url}/{name}?page={page_num}'
-    return new_url  #create url.py
+k = create_url.create_url (settings.NAME, main_url=settings.MAIN_URL)
+print(k)
+settings.NAME  
 
-
-result = create_url(NAME, MAIN_URL)
-
-print(result)
-
+def add (x, y):
+    return x + y
+print(add(3, 5))
