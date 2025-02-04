@@ -8,7 +8,7 @@ class Shape:
         print(f'Width: {self.wedith}')
         print(f'Height: {self.height}')
         print(f'Area: {self.wedith * self.height} ')
-        print(f'Perimeter: {self.wedith * 2 + self.height * 2}')
+        print(f'Perimeter: {(self.wedith + self.height) * 2}')
 
         
 

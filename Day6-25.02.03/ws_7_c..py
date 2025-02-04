@@ -6,7 +6,7 @@ class Car:
         self.driving_system = driving_system
         self.sound = sound
 
- 
+ # 인스턴스 메서드 첫번째 인자는 self
     def drive(self) :
         print(self.sound)
         return self.engine
@@ -14,6 +14,7 @@ class Car:
     def introduce(self) :
         print(f'제 차의 엔진은 {self.engine} 방식이고, {self.driving_system} (으)로 동작합니다.')
     
+    # classmethod도 첫번째 인자는 cls
     @classmethod
     def increase_wheels(cls) :
         cls.wheels += 1
