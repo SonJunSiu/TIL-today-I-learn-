@@ -1,11 +1,24 @@
-# 아래 함수를 수정하시오.
-def find_min_max(number):
-    return min(number), max(number)
+number_of_people = 0
+
+
+def increase_user():
+    global number_of_people
+    number_of_people += 1
     
 
 
-result = find_min_max([3, 1, 7, 2, 5])
-print(result)  # (1, 7)
+def create_user(name, age, address) :
+    global number_of_people
+    user_info = {
+        'name' : name ,
+        'age' : age ,
+        'address' : address ,
+    }
+    print(f'''현재 가입 된 유저 수 : {number_of_people}
+print{name}님 환영합니다!''')
+    increase_user()
+    return user_info
 
-# 주어진 리스트에서 최솟값과 최댓값을 찾는 find_min_max 함수를 작성하시오. 
-# 리스트를 인자로 받아 최솟값과 최댓값을 튜플로 반환해야 한다
+user = create_user('홍길동', 30 , '서울')
+print(user)
+print(f'현재 가입 된 유저 수 : {number_of_people}')
