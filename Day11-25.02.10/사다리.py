@@ -23,8 +23,8 @@ def answer_point(load) : # 2에서 시작해서 첫 지점으로 가는 함수
 
     while r > 0 : #행이 1일때 위로 올라감
         if c > 0 and load[r][c - 1] == 1: # 좌로 이동한다
-            while c > 0 and load[r][c - 1] == 1:
-                c -= 1  # 왼쪽으로 계속 이동
+            while c > 0 and load[r][c - 1] == 1: # 1이 있는 동안에만
+                c -= 1  # 왼쪽으로 계속 이동 -1씩 하면서
         elif c < 99 and load[r][c + 1] == 1:
             while c < 99 and load[r][c + 1] == 1:
                 c += 1  # 오른쪽으로 계속 이동
