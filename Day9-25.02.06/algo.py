@@ -3,7 +3,7 @@ data = [7, 5, 3, 2, 1, 2, 3, 4, 5, 6, 1, 2, 3, 5, 7]
 N = len(data)
 max_val = 7
 # 정령 대상의 각 요소가 몇개씩 있는지 표시하는 배열
-counts = [0] * max_val + 1
+counts = [0] * (max_val + 1)
 # 개수세기
 for i in range(N) :
     # data[i]의 값이 몇개 나오는가?
