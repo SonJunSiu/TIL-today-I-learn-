@@ -10,7 +10,7 @@ def power_set(idx, tmp_sum):
         return
     if idx == N :
         if tmp_sum == M:
-            print(check)
+            # print(check)
             for i in range(N):
                 if check[i]:
                     print(arr[i], end=',')
