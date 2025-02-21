@@ -9,3 +9,5 @@ print(math.atan(w/h))
 rad_v = math.atan(w/h)
 deg_v = rad_v * 180/math.pi
 print(deg_v)
+
+math.at

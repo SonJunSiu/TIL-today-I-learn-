@@ -1,0 +1,29 @@
+h2 {
+    color: darkviolet;
+  }
+  
+  p {
+    color: orange;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  #red {
+    color: red;
+  }
+  
+  h2#red {
+    color: darkviolet !important;
+  }
+  
+ 
+  p#red[style] {
+    color: yellow !important;
+  }
+  
