@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .border{
+      border: 1px solid black;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    .bg-red{
+      background-color: red;
+    }
+    .bg-orange{
+      background-color: orange;
+    }
+    .bg-yellow{
+      background-color: yellow;
+    }
+    .bg-green{
+      background-color: green;
+    }
+    .bg-blue{
+      background-color: blue;
+    }
+    .p-static{
+        position: static;
+        top: 10px;
+    }
+    .p-relative{
+        position: relative;
+        top: 30px;
+    }
+    .p-absolute{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .p-fixed{
+        position: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div class="box bg-red border p-static"></div>
+  <div class="box bg-orange border p-relative"></div>
+  <div class="box bg-yellow border p-absolute"></div>
+  <div class="box bg-green border"></div>
+  <div class="box bg-blue border"></div>
+</body>
+</html>
