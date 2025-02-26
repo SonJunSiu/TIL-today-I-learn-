@@ -1,0 +1,175 @@
+/* 기본 스타일 초기화 */
+body {
+    padding: 0;
+    margin: 100px 0 0 0; /* 헤더 높이를 고려하여 여백 추가 */
+  }
+  
+  /* 레이아웃 관련 클래스 */
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* 헤더 및 네비게이션 */
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+  
+  /* 홈 옆의 점(•) 제거 */
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* 가로 정렬 */
+  }
+  
+  .nav li {
+    margin: 10px 20px;
+  }
+  
+  .home {
+    width: 100px;
+    height: 70px;
+    background-color: orangered;
+    text-align: center;
+    line-height: 70px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .main {
+    color: white;
+  }
+  
+  /* "HGD Magazine"이 짤리는 문제 해결 */
+  .bigtitle {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; /* 헤더 높이보다 충분한 여백 추가 */
+  }
+  
+  /* 서브 타이틀 */
+  .subbigtitle {
+    font-size: 36px;
+    font-weight: bold;
+    color: #121212;
+  }
+  
+  .subtitlebox {
+    text-align: center;
+    background-color: rgb(255, 196, 0);
+    padding: 20px;
+  }
+  
+  .subdescription {
+    color: #454545;
+  }
+  
+  .article {
+    margin: 40px;
+  }
+  
+  /* 카드 디자인 */
+  .card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px 0;
+  }
+  
+  /* 재사용 가능한 스타일 (OOCSS 적용) */
+  .shadow-box {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #454545;
+  }
+  
+  .description {
+    padding: 15px;
+    background-color: rgba(255, 213, 127, 0.3);
+  }
+  
+  /* 푸터 */
+  .fixedbottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .end {
+    padding: 20px;
+    margin: 0;
+    background-color: olivedrab;
+    color: white;
+  }
+  
+  /* 네비게이션 스타일 */
+.nav {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+/* 점(•) 제거 및 여백 초기화 */
+.nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex; /* 가로 정렬 */
+}
+
+/* li의 기본 스타일 제거 */
+.nav li {
+  margin: 10px 20px;
+  list-style-type: none; /* 점 제거 */
+}
+
+/* 홈 버튼 */
+.home {
+  width: 100px;
+  height: 70px;
+  background-color: orangered;
+  text-align: center;
+  line-height: 70px;
+}
+
+/* 링크 스타일 */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  color: white;
+}
