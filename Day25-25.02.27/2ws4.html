@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <title>음악 스트리밍 서비스</title>
+  <style>
+    .content {
+      text-align: center;
+    }
+
+    .album-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .album-title {
+      font-weight: bold;
+    }
+
+    .album-description {
+      margin-bottom: 20px;
+    }
+
+    /* 재생 중인 음악 위젯 스타일 */
+    .now-playing-widget {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .now-playing-widget img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 767px) {
+      .now-playing-widget {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1030;
+      }
+      /* main 컨텐츠가 위젯에 가려지지 않도록 여백 추가 */
+      body {
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">음악 스트리밍 서비스</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">아티스트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">플레이리스트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">즐겨찾기</a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search" style="height: 40px;">
+                <button class="btn btn-outline-success" type="submit" style="width: 80px;">검색</button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">사용자 정보</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 재생 중인 음악 위젯 (모바일에서 상단 고정) -->
+  <div class="now-playing-widget">
+    <img src="1album.png" alt="Now Playing">
+    
+    <div>
+      <strong>Now Playing: Song Title</strong>
+      <p class="mb-0">Artist Name</p>
+      <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        <!-- 브라우저가 audio 태그를 지원하지 않을 경우 대체 텍스트 -->
+        Your browser does not support the audio element.
+      </audio>
+      
+    </div>
+  </div>
+  
+
+  <!-- 메인 영역 -->
+  <main>
+    <div class="container">
+      <h1 class="mt-5">Albums</h1>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="1album.png" alt="Album 1" class="card-img-top album-img">
+            <div class="card-body">
+              <h5 class="card-title album-title">Album 1</h5>
+              <p class="card-text album-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              <a href="#" class="btn btn-secondary">Add to Playlist</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="1album.png" alt="Album 2" class="card-img-top album-img">
+            <div class="card-body">
+              <h5 class="card-title album-title">Album 2</h5>
+              <p class="card-text album-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              <a href="#" class="btn btn-secondary">Add to Playlist</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="1album.png" alt="Album 3" class="card-img-top album-img">
+            <div class="card-body">
+              <h5 class="card-title album-title">Album 3</h5>
+              <p class="card-text album-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              <a href="#" class="btn btn-secondary">Add to Playlist</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 푸터 영역 -->
+  <footer>
+    <div class="container">
+      <hr>
+      <p>&copy; 2023 음악 스트리밍 서비스. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 페이지</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container my-5">
+  <!-- 상단: 주목 상품 + 카테고리 -->
+  <div class="row">
+    <!-- 주목 상품 -->
+    <div class="col-12 col-lg-9 mb-3">
+      <h2 class="mb-4">주목 상품</h2>
+      <!-- 주목 상품은 총 3개의 상품 -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- 상품 카드 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="product1.jpg" class="card-img-top" alt="주목 상품 1">
+            <div class="card-body">
+              <h5 class="card-title">주목 상품 1</h5>
+              <p class="card-text">
+                주목 상품 1에 대한 간략한 설명을 여기에 작성하세요.
+              </p>
+              <a href="#" class="btn btn-primary">구매하기</a>
+            </div>
+          </div>
+        </div>
+        <!-- 상품 카드 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="product2.jpg" class="card-img-top" alt="주목 상품 2">
+            <div class="card-body">
+              <h5 class="card-title">주목 상품 2</h5>
+              <p class="card-text">
+                주목 상품 2에 대한 간략한 설명을 여기에 작성하세요.
+              </p>
+              <a href="#" class="btn btn-primary">구매하기</a>
+            </div>
+          </div>
+        </div>
+        <!-- 상품 카드 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="product3.jpg" class="card-img-top" alt="주목 상품 3">
+            <div class="card-body">
+              <h5 class="card-title">주목 상품 3</h5>
+              <p class="card-text">
+                주목 상품 3에 대한 간략한 설명을 여기에 작성하세요.
+              </p>
+              <a href="#" class="btn btn-primary">구매하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 카테고리 (992px 이상에서만 표시) -->
+    <div class="d-none d-lg-block col-lg-3">
+      <h2 class="mb-4">카테고리</h2>
+      <ul class="list-group">
+        <li class="list-group-item">카테고리 1</li>
+        <li class="list-group-item">카테고리 2</li>
+        <li class="list-group-item">카테고리 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 하단: 인기 상품, 신상품, 특별 할인 -->
+  <!-- 각 섹션은 2개의 상품을 소개 -->
+  
+  <!-- 인기 상품 -->
+  <div class="row mt-5">
+    <h2 class="mb-4">인기 상품</h2>
+    <div class="row g-4">
+      <!-- 상품 1 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4">
+        <div class="card h-100">
+          <img src="product4.jpg" class="card-img-top" alt="인기 상품 1">
+          <div class="card-body">
+            <h5 class="card-title">인기 상품 1</h5>
+            <p class="card-text">
+              인기 상품 1에 대한 간략한 설명입니다.
+            </p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+      <!-- 상품 2 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4">
+        <div class="card h-100">
+          <img src="product5.jpg" class="card-img-top" alt="인기 상품 2">
+          <div class="card-body">
+            <h5 class="card-title">인기 상품 2</h5>
+            <p class="card-text">
+              인기 상품 2에 대한 간략한 설명입니다.
+            </p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 신상품 -->
+  <div class="row mt-5">
+    <h2 class="mb-4">신상품</h2>
+    <div class="row g-4">
+      <!-- 상품 1 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4">
+        <div class="card h-100">
+          <img src="product6.jpg" class="card-img-top" alt="신상품 1">
+          <div class="card-body">
+            <h5 class="card-title">신상품 1</h5>
+            <p class="card-text">
+              신상품 1에 대한 간략한 설명입니다.
+            </p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+      <!-- 상품 2 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4">
+        <div class="card h-100">
+          <img src="product7.jpg" class="card-img-top" alt="신상품 2">
+          <div class="card-body">
+            <h5 class="card-title">신상품 2</h5>
+            <p class="card-text">
+              신상품 2에 대한 간략한 설명입니다.
+            </p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 특별 할인 -->
+  <div class="row mt-5">
+    <h2 class="mb-4">특별 할인</h2>
+    <div class="row g-4">
+      <!-- 상품 1 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4">
+        <div class="card h-100">
+          <img src="product8.jpg" class="card-img-top" alt="특별 할인 1">
+          <div class="card-body">
+            <h5 class="card-title">특별 할인 1</h5>
+            <p class="card-text">
+              특별 할인 상품 1에 대한 간략한 설명입니다.
+            </p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+      <!-- 상품 2 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4">
+        <div class="card h-100">
+          <img src="product9.jpg" class="card-img-top" alt="특별 할인 2">
+          <div class="card-body">
+            <h5 class="card-title">특별 할인 2</h5>
+            <p class="card-text">
+              특별 할인 상품 2에 대한 간략한 설명입니다.
+            </p>
+            <a href="#" class="btn btn-primary">구매하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS (bundle에는 Popper.js 포함) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

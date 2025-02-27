@@ -1,3 +1,4 @@
+'''
 def solve(P, Pa, Pb):   # P: 전체 쪽  Pa, Pb : 찾아야할 쪽
     A_start = 1  # A 시작하는 첫 쪽
     last_A = P # A 탐색 마지막
@@ -35,6 +36,7 @@ for tc in range(1, T+1) :
     P, Pa, Pb = map(int, input().split())  # 전체 페이지 수, A와 B의 목표 페이지
     answer = solve(P, Pa, Pb) # solve 함수 호출
     print(f'#{tc} {answer}')
+'''
 
 
         
