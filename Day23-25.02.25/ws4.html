@@ -17,33 +17,37 @@
         color: #333;
       }
 
-      .section {
-        text-align: left;
-        padding: 20px 30px;
-        color: black;
-        font-size: 20px;
-        font-weight: bold;
+      /* 섹션 제목 스타일 */
+      .section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color: #333;
         background-color: white;
+        font-size: 24px;
+        font-weight: bold;
         margin: 20px 0;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        width: 100%; 
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
-
+      /* 도서 목록 컨테이너 */
       .book-list {
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: flex-start; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* 수평 중앙 정렬 */
+        align-items: center; /* 수직 중앙 정렬 */
+        gap: 20px; /* 카드 간격 */
       }
 
+      /* 도서 카드 스타일 */
       .book-container {
         box-sizing: border-box;
         background-color: #fff;
-        width: 300px; 
+        width: 300px;
         padding: 20px;
-        margin: 10px; 
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
@@ -53,24 +57,44 @@
         font-weight: bold;
         color: #333;
         margin-bottom: 10px;
+        text-align: left;
       }
 
       .book-author {
         font-size: 14px;
         color: #666;
         margin-bottom: 10px;
+        text-align: left;
       }
 
       .book-description {
         font-size: 14px;
         color: #888;
       }
+
+      .top-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .top-button a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
     <h1>도서 관리 서비스에 오신 것을 환영합니다</h1>
 
-
+    <div class="section-title">베스트 셀러 목록</div>
     <div class="book-list">
       <div class="book-container">
         <h2 class="book-title">도서 제목 1</h2>
@@ -89,7 +113,10 @@
           accusantium doloremque laudantium.
         </p>
       </div>
+    </div>
 
+    <div class="section-title">신간 도서 목록</div>
+    <div class="book-list">
       <div class="book-container">
         <h2 class="book-title">도서 제목 3</h2>
         <p class="book-author">저자 3</p>
@@ -100,9 +127,8 @@
       </div>
     </div>
 
-
-      </div>
-    </div>
-
+    <button class="top-button">
+      <a href="#">TOP</a>
+    </button>
   </body>
 </html>

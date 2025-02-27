@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자손 결합자 vs 자식 결합자</title>
+    <style>
+      div p {
+        color: blue;
+      }
+
+      div > p {
+        color: crimson;
+      }
+
+      .grandchild {
+        color: blue;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>자식</p>
+      <div>
+        <p class="grandchild">손자</p>
+      </div>
+      <p>자식</p>
+    </div>
+  </body>
+</html>
