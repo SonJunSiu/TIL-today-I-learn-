@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>포트폴리오 수정</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 600px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">포트폴리오 수정</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">기본 정보</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">포트폴리오</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3 class="mt-4">포트폴리오 수정</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <label>회원 번호</label>
+                <input type="text" class="form-control" value="0914" readonly>
+            </div>
+            <div class="col-md-6">
+                <label>ID</label>
+                <input type="text" class="form-control" value="majesty_bori" readonly>
+            </div>
+        </div>
+
+        <div class="form-group mt-2">
+            <label>저축 성향</label><br>
+            <input type="radio" name="saving" value="aggressive"> 완전 저축
+            <input type="radio" name="saving" value="conservative"> 일부 저축
+        </div>
+
+        <div class="form-group mt-2">
+            <label>주거래 은행</label>
+            <input type="text" class="form-control" placeholder="은행명을 입력하세요">
+        </div>
+
+        <button class="btn btn-success mt-3">저장</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+/* advanced-style.css */
+
+/* Google Fonts 및 CSS 변수 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #FFB6C1;      /* 연한 핑크 */
+    --secondary-color: #FFDAB9;    /* 복숭아빛 */
+    --accent-color: #FF69B4;       /* 좀 더 진한 핑크 */
+    --bg-gradient-start: #FFF1E6;   /* 따뜻한 베이지 */
+    --bg-gradient-end: #FFE4E1;     /* 연한 장미빛 */
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* 부드럽고 따뜻한 그라데이션 배경 애니메이션 */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    font-family: var(--font-family) !important;
+    background: linear-gradient(-45deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    background-size: 200% 200%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: var(--accent-color) !important;
+}
+
+.navbar a.nav-link {
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* 컨테이너 박스 */
+.container {
+    background: #ffffff !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    padding: 30px !important;
+    margin-top: 40px !important;
+}
+
+/* 프로필 사진 */
+.profile-pic {
+    position: relative; /* ::after 가상요소를 위한 위치 지정 */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 러블리한 하트 오버레이 추가 */
+.profile-pic::after {
+    content: "♥";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    font-size: 2rem;
+    color: var(--accent-color); /* 기존 변수(--accent-color)는 따뜻한 핑크 등으로 설정 */
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* 폼 요소 */
+.form-group label {
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+input.form-control,
+textarea.form-control {
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: var(--secondary-color) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 버튼 스타일 */
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border: none !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background-color: #155724 !important;
+    border: none !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #0f2e16 !important;
+    transform: translateY(-2px);
+}
+
+
+/* 반응형 미디어쿼리 */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px !important;
+    }
+    .navbar {
+        padding: 0.8rem 1rem !important;
+    }
+    .navbar-brand {
+        font-size: 1.8rem !important;
+    }
+}
+
